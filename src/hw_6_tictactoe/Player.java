@@ -5,7 +5,11 @@ public class Player {
     private int score;
     
     public Player(){
-       this.score = 0;
+        
+    }
+    
+    public Player(int score){
+       this.score = score;
     }
 
     public void askInput(){

@@ -25,8 +25,8 @@ public class HW_6_TicTacToe {
         boolean isDraw;
         boolean gameOver;
         boolean playAgain;
-        Player player1 = new Player();
-        Player player2 = new Player();
+        Player player1 = new Player(0);
+        Player player2 = new Player(0);
         Board playBoard = new Board(3, 3);
         String answer;
 
@@ -90,7 +90,7 @@ public class HW_6_TicTacToe {
 
                 steps++;
 
-                if (steps > 8) {
+                if (steps > 8 && !gameOver) { // if steps>8 && no winner yet, must be draw
                     isDraw = !isDraw;
                     System.out.println("It's a DRAW!!");
                     gameOver = !gameOver;
