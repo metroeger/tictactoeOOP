@@ -42,9 +42,9 @@ public class Board {
 
     public boolean isInRange(int rowInt, int colInt) {
         while (rowInt >= 4 || rowInt < 0 || colInt < 0 || colInt >= 3) {
-            return true;
+            return false;
         }
-        return false;
+        return true;
     }
 
     public boolean isTaken(int rowInt, int colInt) {
@@ -92,14 +92,12 @@ public class Board {
         }
         return false;
     }
-    
-    public void clearBoard(){
+
+    public void clearBoard() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                board[i][j]=' ';
-                
+                board[i][j] = ' ';
             }
-            
         }
     }
 
