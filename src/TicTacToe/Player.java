@@ -1,4 +1,4 @@
-package hw_6_tictactoe;
+package TicTacToe;
 
 import java.util.Scanner;
 

@@ -1,8 +1,8 @@
-package hw_6_tictactoe;
+package TicTacToe;
 
 import java.util.Scanner;
 
-public class HW_6_TicTacToe {
+public class TicTacToe {
 
     public static char convert(char row) {
         if (row == 'a' || row == 'A') {
