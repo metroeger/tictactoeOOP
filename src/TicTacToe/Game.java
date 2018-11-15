@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class Game {
 
-    char play1 = 'x';
-    char play2 = 'o';
-    int steps = 0;
-    boolean isTurn;
-    boolean isDraw;
-    boolean gameOver;
-    boolean playAgain;
-    Player player1 = new Player();
-    Player player2 = new Player();
-    Board playBoard = new Board(3, 3);
-    String answer = "";
-    char row = ' ';
-    char col = ' ';
-    int numOfGames = 1;
+    private char play1 = 'x';
+    private char play2 = 'o';
+    private int steps = 0;
+    private boolean isTurn;
+    private boolean isDraw;
+    private boolean gameOver;
+    private boolean playAgain;
+    private Player player1 = new Player();
+    private Player player2 = new Player();
+    private Board playBoard = new Board(3, 3);
+    private String answer = "";
+    private char row = ' ';
+    private char col = ' ';
+    private int numOfGames = 1;
 
     public Game() {
 
