@@ -29,16 +29,6 @@ public class Board {
         System.out.println("  -------------");
     }
 
-    public char convert(char row) {
-        if (row == 'a' || row == 'A') {
-            row = '0';
-        } else if (row == 'b' || row == 'B') {
-            row = '1';
-        } else if (row == 'c' || row == 'c') {
-            row = '2';
-        }
-        return row;
-    }
 
     public boolean isInRange(int rowInt, int colInt) {
         while (rowInt >= 4 || rowInt < 0 || colInt < 0 || colInt >= 3) {
